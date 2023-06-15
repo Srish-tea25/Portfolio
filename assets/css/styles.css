@@ -700,8 +700,6 @@ svg{
         font-size: var(--normal-font-size);
     }
 
-    }
-
     .contact__container{
         grid-template-columns: 680px;
         padding-block: 2.5rem 2rem;
@@ -742,3 +740,4 @@ svg{
     .scrollup{
         right: 3rem;
     }
+}

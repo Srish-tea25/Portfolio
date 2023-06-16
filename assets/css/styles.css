@@ -19,13 +19,14 @@
     --first-color: hst(var(--hue), 100%, 40%);
     --first-color-alt: hst(var(--hue), 56%, 35%);
     --title-color: hsl(276, 36%, 95%);
-    --text-color: hsl(181, 83%, 39%);
-    --body-color: hsl(228, 15%, 20%);
+    --text-color: hsl(153, 45%, 44%);
+    --body-color: hsl(150, 6%, 19%);
     --container-color: hsl(228, 15%, 15%);
+    --blob-color: hsl(160, 5%, 11%);
 
     /*============ Font and typography ===========*/
     /*.5rem = 8px | 1 rem = 16px ...*/
-    --body-font: "Poppins", sans-serif;
+    --body-font: "Rubik", sans-serif;
     --biggest-font-size: 2rem;
     --bigger-font-size: 1.25rem;
     --h1-font-size: 1.5rem;
@@ -311,7 +312,7 @@ svg{
 
 .home__blob{
     width: 320px;
-    fill: var(--text-color);
+    fill: var(--blob-color);
     filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
 }
 
@@ -341,6 +342,7 @@ svg{
 
 .about__description{
     margin-bottom: 2rem;
+    color: white;
 }
 
 .about__image{
@@ -571,7 +573,13 @@ svg{
     .container{
         margin-inline: 1rem;
     }
+
+    .contact__container{
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
 }
+
 
 /* For medium devices */
 @media screen and (min-width: 576px){
@@ -707,10 +715,12 @@ svg{
     .contact__form{
         row-gap: 1.5rem;
     }
+
     .contact__group{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1.5rem;
     }
+    
     .contact__input{
         padding: 1.5rem;
     }

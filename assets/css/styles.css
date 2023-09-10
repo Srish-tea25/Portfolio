@@ -658,7 +658,7 @@ svg{
     .home__container,
     .about__container,
     .projects__container,
-    .blogs_container,
+    .blogs__container,
     .contact__container{
         grid-template-columns: 360px;
         justify-content: center;
@@ -696,7 +696,7 @@ svg{
     }
 
     .projects__container,
-    .blogs_container{
+    .blogs__container{
         grid-template-columns: repeat(2,352px);
     }
 }
@@ -774,13 +774,13 @@ svg{
     }
     
     .projects__container,
-    .blogs_container{
+    .blogs__container{
         grid-template-columns: repeat(3, 350px);
         row-gap: 3rem;
         padding-block: 2.5rem 4rem;
     }
     .projects__button,
-    .blogs_button{
+    .blogs__button{
         font-size: var(--normal-font-size);
     }
 
